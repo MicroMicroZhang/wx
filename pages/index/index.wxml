@@ -1,0 +1,77 @@
+<!-- 首页 -->
+
+<view class="content"  class="flex-wrp" style="flex-direction:row;">
+  <view  style="flex:1;height:100px;background-color:white">
+  <navigator url="../xiyi/index?title=xiyi" redirect="true" open-type="switchTab" hover-class="other-navigator-hover" class="plate-item">
+  <!-- <navigator url="../xiyi/index?title=navigate" hover-class="navigator-hover" open-type="switchTab" hover-class="other-navigator-hover" class="plate-item"> -->
+     <view class="plate-img" >
+       <!-- <image src="{{a1src}}"></image> -->
+       <image src='./user_s.png'/>
+       </view>
+       <text class="plate-info" >
+        洗衣
+       </text>
+  </navigator>
+  </view>
+  <view style="flex:1;height:100px;background-color:white">
+  <navigator url="/pages/signup/signup" open-type="switchTab" hover-class="other-navigator-hover" class="plate-item">
+     <view class="plate-img">
+       <image src='./user_s.png'/>
+       </view>
+       <text class="plate-info">
+        洗鞋
+       </text>
+  </navigator>
+  </view>
+  <view style="flex:1;height:100px;background-color:white">
+    <navigator url="/pages/teacher/teacher" hover-class="navigator-hover" class="plate-item">
+     <view class="plate-img">
+       <image src='./user_s.png'/>
+       </view>
+       <text class="plate-info">
+        奢侈品
+       </text>
+  </navigator>
+  </view>
+</view>
+
+<view class="content"  class="flex-wrp" style="flex-direction:row;">
+  <view  style="flex:1;height:100px;background-color:white">
+  <navigator url="/pages/action/action" open-type="switchTab" hover-class="other-navigator-hover" class="plate-item">
+     <view class="plate-img" >
+       <image src='./user_s.png'/>
+       </view>
+       <text class="plate-info">
+        洗家居
+       </text>
+  </navigator>
+  </view>
+  <view style="flex:1;height:100px;background-color:white">
+  <navigator url="/pages/signup/signup" open-type="switchTab" hover-class="other-navigator-hover" class="plate-item">
+     <view class="plate-img">
+       <image src='./user_s.png'/>
+       </view>
+       <text class="plate-info">
+        洗车饰
+       </text>
+  </navigator>
+  </view>
+  <view style="flex:1;height:100px;background-color:white">
+    <navigator url="/pages/teacher/teacher" hover-class="navigator-hover" class="plate-item">
+     <view class="plate-img">
+       <image src='./user_s.png'/>
+       </view>
+       <text class="plate-info">
+        洗配饰
+       </text>
+  </navigator>
+  </view>
+</view>
+
+<view>
+  <navigator url='/pages/xiyi/'>
+  </navigator>
+</view>
+
+
+

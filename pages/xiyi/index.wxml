@@ -1,0 +1,46 @@
+<!-- 洗衣 -->
+<!-- navigator.wxml -->
+<view style="text-align:center"> {{title}} </view>
+<view> 点击左上角返回回到之前页面 </view>
+<view class="swiper-tab">
+    <view class="swiper-tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="clickTab">洗衣</view>
+    <view class="swiper-tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="clickTab">洗鞋</view>
+    <view class="swiper-tab-item {{currentTab==2?'active':''}}" data-current="2" bindtap="clickTab">奢侈品皮具</view>
+    <view class="swiper-tab-item {{currentTab==3?'active':''}}" data-current="3" bindtap="clickTab">更多</view>
+</view>
+
+<swiper current="{{currentTab}}" duration="300"  bindchange="swiperTab">
+    <swiper-item >
+      <view>
+        <view class="content"  class="flex-wrp" style="flex-direction:row;">
+        <view class="cart-box">
+    <!-- wx:for 渲染购物车列表 -->
+    <view wx:for="{{carts}}">     
+        <text>{{item.title}}</text>
+        <!-- <image>{{item.image}}</image> -->
+        <text>￥{{item.price}}</text>
+        
+        <!-- 增加减少数量按钮 -->
+        <view>
+            <button class="car_item_btn"  bindtap="minusCount" data-index="{{index}}">-</button>
+            <text>{{item.num}}</text>
+            <button class="car_item_btn" bindtap="addCount" data-index="{{index}}">+</button>
+        </view>
+        
+        <!-- 删除按钮 -->
+        <!-- <text bindtap="deleteList" data-index="{{index}}"> × </text> -->
+    </view>
+</view>
+        </view>
+
+      </view>
+
+    </swiper-item>
+</swiper>
+<view class="car_bot">
+	<view class="car_bot_wrap">
+		总价
+		<span class="car_order_confirm" bindtap="toPay">下单</span>
+		<span class="car_total_money">¥00.00</span>
+	</view>
+</view>

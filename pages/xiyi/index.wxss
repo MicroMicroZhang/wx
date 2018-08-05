@@ -1,0 +1,52 @@
+/* xiyi */
+.swiper-tab{
+    width: 100%;
+    border-bottom: 2rpx solid #ccc;
+    text-align: center;
+    height: 88rpx;
+    line-height: 88rpx;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+.swiper-tab-item{
+    width: 30%; 
+    color:#434343;
+}
+.active{
+    color:#F65959;
+    border-bottom: 4rpx solid #F65959;
+}
+swiper{
+  text-align: center;
+}
+.car_bot {
+    position: fixed;
+    width: 100%;
+    background-color: #FFF;
+    bottom: 0;
+    border-bottom: 1px solid #E5E5E5;
+    font-size: 14px;
+}
+.car_bot_wrap {
+    padding: 10px;
+    height: 30px;
+    line-height: 30px;
+}
+.car_item_btn {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    line-height: 28px;
+    border: 1px solid #B2B2B2;
+    color: #929292;
+}
+.car_item_image {
+    width: 80px;
+    height: 80px;
+}
+
+.changestyle{
+    color: red;
+}
